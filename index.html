@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebDev Quiz Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>WebDev Quiz Hub</h1>
+
+    <!-- 👇 Setup Section (will be hidden after starting quiz) -->
+    <div id="setup">
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty" aria-label="Select Difficulty">
+        <option value="" disabled selected>Choose difficulty</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="mixed">Mixed</option>
+      </select>
+
+      <label for="mode">Select Quiz Mode:</label>
+      <select id="mode" aria-label="Select Quiz Mode">
+        <option value="" disabled selected>Choose mode</option>
+        <option value="short">Short (5 questions)</option>
+        <option value="long">Long (10 questions)</option>
+      </select>
+
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- 👇 Quiz & Result Sections -->
+    <div id="question-container" class="hidden"></div>
+    <div id="options-container" class="hidden"></div>
+    <div id="score-container" class="hidden"></div>
+  </div>
+</body>
+</html>
